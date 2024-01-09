@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+</head>
+<body>
+  <div><img src="../../../assets/artes/Arte Background (blur).svg" alt="Imagen de fundo"></div>
+  <div class="content-login">
+    <form [formGroup]="loginForm">
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" formControlName="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Senha</label>
+        <input type="password" id="password" formControlName="password" required />
+      </div>
+
+      <button type="submit" class="btn btn-primary">Entrar</button>
+    </form>
+  </div>
+
+</body>
+</html>

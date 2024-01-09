@@ -1,0 +1,9 @@
+[
+  {"_id": "0", "name": "Sabrina sato fagundes a...", "price": 125.00, "date": "12/05/2024", "status": "Em trânsito"},
+  {"_id": "1", "name": "Sabrina Sato Fagundes", "price": 125.00, "date": "12/05/2024", "status": "Em trânsito"},
+  {"_id": "2", "name": "Carlos Silva", "price": 78.50, "date": "15/05/2024", "status": "Aguardando pagamento"},
+  {"_id": "3", "name": "Juliana Oliveira", "price": 220.75, "date": "18/05/2024", "status": "Entregue"},
+  {"_id": "4", "name": "Rafael Souza", "price": 40.00, "date": "20/05/2024", "status": "Cancelado"},
+  {"_id": "5", "name": "Fernanda Santos", "price": 95.20, "date": "22/05/2024", "status": "Em processamento"},
+  {"_id": "6", "name": "Pedro Pereira", "price": 150.90, "date": "25/05/2024", "status": "Em trânsito"}
+]

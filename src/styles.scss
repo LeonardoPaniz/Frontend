@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+// // Tema Personalizado para Angular Material
+// // Para mais informações: https://material.angular.io/guide/theming
+// @use '@angular/material' as mat;
+// // Além das importações para outros componentes em seu aplicativo.
+
+// // Inclua os estilos comuns para o Angular Material. Incluímos isso aqui para que você só
+// // precise carregar um único arquivo CSS para o Angular Material em seu aplicativo.
+// // Certifique-se de incluir esse mixin apenas uma vez!
+// @include mat.core();
+
+// // Defina as paletas para o tema usando as paletas de Material Design disponíveis em palette.scss
+// // (importado acima). Para cada paleta, você pode opcionalmente especificar uma tonalidade padrão, mais clara e mais escura.
+// // Paletas de cores disponíveis: https://material.io/design/color/
+// $BonsGoles-admin-primary: mat.define-palette(mat.$indigo-palette);
+// $BonsGoles-admin-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// // A paleta "warn" é opcional (padrão é vermelho).
+// $BonsGoles-admin-warn: mat.define-palette(mat.$red-palette);
+
+// // Crie o objeto de tema. Um tema consiste em configurações para sistemas individuais de tema, como "color" ou "typography".
+// $BonsGoles-admin-theme: mat.define-light-theme((
+//   color: (
+//     primary: $BonsGoles-admin-primary,
+//     accent: $BonsGoles-admin-accent,
+//     warn: $BonsGoles-admin-warn,
+//   )
+// ));
+
+// // Inclua os estilos do tema para o núcleo e cada componente usado em seu aplicativo.
+// // Alternativamente, você pode importar e @include os mixins de tema para cada componente
+// // que você está usando.
+// @include mat.all-component-themes($BonsGoles-admin-theme);
+
+@import '@angular/material/theming';
+@include mat-core();
+
+$custom-app-primary: mat-palette($mat-deep-orange-palette, 700);
+$custom-app-secondary: mat-palette($mat-deep-purple-palette, A400);
+$custom-app-warn: mat-palette($mat-orange-palette, 400);
+
+$custom-theme: mat-light-theme($custom-app-primary, $custom-app-secondary, $custom-app-warn);
+
+@include angular-material-theme($custom-theme);
+
+//! CORES PERSONALIZADAS ----------------
+
+$principal_color: #6E2AF5;
+$secundary_color: #E94B27;
+$tertiary_color: #FFAE34;
+$black_color: #000;
+$white_color: #ffffff;
+
+:root {
+  --principal-color: #{$principal_color};
+  --secundary-color: #{$secundary_color};
+  --tertiary-color: #{$tertiary_color};
+  --black-color: #{$black_color};
+  --white-color: #{$white_color};
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
