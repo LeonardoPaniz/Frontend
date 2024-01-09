@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "BonsGoles-admin:build:production"
+              "buildTarget": "BonsGoles-admin:build:production"
             },
             "development": {
-              "browserTarget": "BonsGoles-admin:build:development"
+              "buildTarget": "BonsGoles-admin:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "BonsGoles-admin:build"
+            "buildTarget": "BonsGoles-admin:build"
           }
         },
         "test": {
